@@ -23,6 +23,9 @@ help:
 .PHONY: version
 version: ## Check flutter version
 	@rustc --version
+	@cargo --version
+	@cargo fmt --version
+	@cargo clippy --version
 
 .PHONY: get
 get: ## Get the dependencies
