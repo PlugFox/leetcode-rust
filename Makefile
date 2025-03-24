@@ -80,10 +80,16 @@ gen: generate
 .PHONY: codegen
 codegen: generate
 
+.PHONY: build
+build: get format ## Build the project
+	@echo "Building the project..."
+	@cargo build --release
+	@echo "Build artifacts are located in the target/release directory."
+
 .PHONY: clean
 clean: ## Clean the project and remove all generated files
 	@rm -f coverage.*
-	@rm -rf dist bin out build
+	@rm -rf dist bin out build target
 
 .PHONY: diff
 diff: ## git diff

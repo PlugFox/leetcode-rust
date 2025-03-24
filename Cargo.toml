@@ -16,12 +16,5 @@ codegen-units = 1
 panic = "abort"
 strip = true
 
-[profile.dev]
-opt-level = 1
-lto = "fat"
-codegen-units = 1
-panic = "unwind"
-strip = false
-
 [dependencies]
 # Add your dependencies here
