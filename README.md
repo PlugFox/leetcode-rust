@@ -1,2 +1,1 @@
-# leetcode-rust
-🦀 Introduction to Rust
+# 🦀 Rust Leetcode
