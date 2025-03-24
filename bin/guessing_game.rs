@@ -20,8 +20,25 @@ fn main() {
             .read_line(&mut guess)
             .expect("Failed to read line");
 
-        let guess: u32 = guess.trim().parse::<u32>().expect("Please enter a number");
+        // Check for exit commands
+        match guess.trim() {
+            "exit\n" | "q" | "quit" => {
+                println!("> Exiting the game.");
+                return;
+            }
+            _ => {}
+        }
 
+        // Parse the guess
+        let guess: u32 = match guess.trim().parse::<u32>() {
+            Ok(num) => num,
+            Err(_) => {
+                println!("> Please enter a valid number.");
+                continue;
+            }
+        };
+
+        // Compare the guess with the secret number
         match guess.cmp(&secret_number) {
             Ordering::Less => println!("> Too small!"),
             Ordering::Greater => println!("> Too big!"),
