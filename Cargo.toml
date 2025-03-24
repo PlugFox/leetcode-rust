@@ -2,7 +2,7 @@
 name = "rustleet"
 description = "Rust solutions for LeetCode problems"
 version = "0.1.0"
-edition = "2025"
+edition = "2024"
 
 [[bin]]
 name = "main"
