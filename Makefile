@@ -50,9 +50,9 @@ analyze: get ## Analyze the code
 check: get ## Check the code
 	@
 
-.PHONY: upgrade
-upgrade: get ## Upgrade dependencies
-	@
+.PHONY: update
+update: get ## Update dependencies
+	@cargo update
 
 .PHONY: upgrade-major
 upgrade-major: get ## Upgrade to major versions
