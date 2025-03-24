@@ -1,0 +1,46 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Rustling: 'hello'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=hello",
+                    "--package=rustleet"
+                ],
+                "filter": {
+                    "name": "hello",
+                    "kind": "bin"
+                }
+            },
+            "console": "integratedTerminal",
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Rustling: 'Guessing Game'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=guessing_game",
+                    "--package=rustleet"
+                ],
+                "filter": {
+                    "name": "guessing_game",
+                    "kind": "bin"
+                }
+            },
+            "console": "integratedTerminal",
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        }
+    ]
+}

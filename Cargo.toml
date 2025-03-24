@@ -1,0 +1,25 @@
+[package]
+name = "rustleet"
+description = "Rust solutions for LeetCode problems"
+version = "0.1.0"
+edition = "2024"
+
+[[bin]]
+name = "hello"
+path = "bin/hello.rs"
+
+[[bin]]
+name = "guessing_game"
+path = "bin/guessing_game.rs"
+
+# cargo run --release
+[profile.release]
+opt-level = 3
+lto = "fat"
+codegen-units = 1
+panic = "abort"
+strip = true
+
+[dependencies]
+rand = "0.9.0"
+# Add your dependencies here
