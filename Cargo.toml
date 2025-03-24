@@ -1,0 +1,9 @@
+[package]
+name = "rustleet"
+description = "Rust solutions for LeetCode problems"
+version = "0.1.0"
+edition = "2025"
+
+[[bin]]
+name = "main"
+path = "bin/main.rs"
