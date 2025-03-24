@@ -22,7 +22,7 @@ help:
 
 .PHONY: version
 version: ## Check flutter version
-	@rust --version
+	@rustc --version
 
 .PHONY: get
 get: ## Get the dependencies
