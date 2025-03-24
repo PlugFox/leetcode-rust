@@ -4,6 +4,14 @@
     "editor.formatOnType": true,
     "editor.formatOnSaveMode": "file",
     "[rust]": {
-        "editor.defaultFormatter": "rust-lang.rust-analyzer"
+        "editor.defaultFormatter": "rust-lang.rust-analyzer",
+        "editor.rulers": [
+            120
+        ],
+        "editor.wordWrapColumn": 120
     },
+    "editor.rulers": [
+        120
+    ],
+    "editor.wordWrapColumn": 120
 }
