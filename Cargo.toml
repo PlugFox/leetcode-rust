@@ -8,6 +8,10 @@ edition = "2024"
 name = "hello"
 path = "bin/hello.rs"
 
+[[bin]]
+name = "guessing_game"
+path = "bin/guessing_game.rs"
+
 # cargo run --release
 [profile.release]
 opt-level = 3

@@ -7,7 +7,7 @@
         {
             "type": "lldb",
             "request": "launch",
-            "name": "Debug executable 'hello'",
+            "name": "Rustling: 'hello'",
             "cargo": {
                 "args": [
                     "build",
@@ -19,25 +19,26 @@
                     "kind": "bin"
                 }
             },
+            "console": "integratedTerminal",
             "args": [],
             "cwd": "${workspaceFolder}"
         },
         {
             "type": "lldb",
             "request": "launch",
-            "name": "Debug unit tests in executable 'hello'",
+            "name": "Rustling: 'Guessing Game'",
             "cargo": {
                 "args": [
-                    "test",
-                    "--no-run",
-                    "--bin=hello",
+                    "build",
+                    "--bin=guessing_game",
                     "--package=rustleet"
                 ],
                 "filter": {
-                    "name": "hello",
+                    "name": "guessing_game",
                     "kind": "bin"
                 }
             },
+            "console": "integratedTerminal",
             "args": [],
             "cwd": "${workspaceFolder}"
         }
