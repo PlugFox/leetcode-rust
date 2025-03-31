@@ -16,8 +16,8 @@
                     "kind": "bin"
                 }
             },
-            "console": "integratedTerminal",
-            "internalConsoleOptions": "neverOpen",
+"console": "integratedTerminal",
+"internalConsoleOptions": "neverOpen",
             "args": [],
             "cwd": "${workspaceFolder}"
         },

@@ -24,9 +24,5 @@
         "editor.suggest.showFiles": true,
         "editor.suggest.showFolders": true,
         "editor.suggest.showReferences": true, */
-    },
-    "editor.rulers": [
-        120
-    ],
-    "editor.wordWrapColumn": 120
+    }
 }
