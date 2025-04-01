@@ -19,7 +19,12 @@ fn main() {
             let result = Solution::two_sum(nums, target);
             println!("Result: {:?}", result);
         }
-        // Add more problems as they're implemented
+        "9" => {
+            println!("Running Palindrome Number solution...");
+            let x = 121;
+            let result = Solution::is_palindrome(x);
+            println!("Result: {:?}", result);
+        }
         _ => println!("Problem {} not implemented yet.", problem_number),
     }
 }
