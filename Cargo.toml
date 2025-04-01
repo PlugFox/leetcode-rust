@@ -12,6 +12,10 @@ path = "bin/hello.rs"
 name = "guessing_game"
 path = "bin/guessing_game.rs"
 
+[[bin]]
+name = "leetcode"
+path = "bin/leetcode.rs"
+
 # cargo run --release
 [profile.release]
 opt-level = 3
@@ -22,4 +26,8 @@ strip = true
 
 [dependencies]
 rand = "0.9.0"
-# Add your dependencies here
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+
+[dev-dependencies]
+criterion = "0.5"
