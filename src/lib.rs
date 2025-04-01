@@ -1,7 +1,5 @@
 pub mod leetcode {
-    pub mod problems {
-        // This will be automatically populated as we add more problem modules
-    }
+    pub mod problems;
 
     pub struct Solution;
 }
